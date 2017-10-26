@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//物とのあたり判定を区別するスクリプト
 public class Sensor : MonoBehaviour
 {
-    bool shieldSwitch = false;
-    bool timeSwitch = false;
-    float time = 3.0f;
+    bool shieldSwitch = false;//シールドをとったぜスイッチOFF！！
+    bool timeSwitch = false;//時間計測スイッチOFF！！
+    float time = 3.0f;//秒数
     GameObject cat;
 
     GameObject audioManager;
@@ -16,7 +17,7 @@ public class Sensor : MonoBehaviour
     {
         cat = transform.parent.gameObject;
 
-        audioManager = GameObject.Find("AudioManager");
+        audioManager = GameObject.Find("AudioManager");//SEがあるスクリプトを参照
         
 
 
@@ -25,17 +26,17 @@ public class Sensor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shieldSwitch == true)
+        if (shieldSwitch == true)//シールドをとったぜスイッチON！！
         {
-            
+            //↓ネコの色を変える
             cat.GetComponent<SpriteRenderer>().color = new Color(0.8f, 0.8f, 1.0f, 1.0f);
-            if (Input.GetKeyDown(KeyCode.B))
+            if (Input.GetKeyDown(KeyCode.B))//Bボタンを押したら！！
             {
-                audioManager.GetComponent<AudioManager>().SE_tate();
-                timeSwitch = true;
+                audioManager.GetComponent<AudioManager>().SE_tate();//シールドのSEをならす
+                timeSwitch = true;//時間計測スイッチON！！
             }
         }
-        if (timeSwitch == true)
+        if (timeSwitch == true)//シールドを3秒間発動するためのスクリプト
         {
             time = time - 1 * Time.deltaTime;
             cat.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 1.0f, 1.0f);
@@ -54,7 +55,7 @@ public class Sensor : MonoBehaviour
 
         if (collision.tag == "Fish")//接触したのが魚tagだったら
         {
-            audioManager.GetComponent<AudioManager>().SE_fish();
+            audioManager.GetComponent<AudioManager>().SE_fish();//SEならす
 
             //HpDirectorを見つける
             GameObject hgdirector = GameObject.Find("HpDirector");
