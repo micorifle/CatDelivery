@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 /// <summary>
 /// UIやシーン移行設定クラス
 /// </summary>
@@ -14,6 +16,9 @@ public class GameManeger : MonoBehaviour
     GUIStyleState timeColor;
     Transform player;
     Transform flag;
+
+    public Text timeLabel;
+    public Text goalLabel;
 
     void Start()
     {
@@ -53,10 +58,10 @@ public class GameManeger : MonoBehaviour
     private void OnGUI()
     {
         //時間表記
-        GUI.Label(new Rect(650, 20, 400, 300), "宅配限界時間まであと " + timeCount.ToString("00") + "秒", style);
-
+        timeLabel.GetComponent<Text>().text = "宅配限界時間まであと " + timeCount.ToString("00") + "秒";
+        
         //旗までの距離
-        GUI.Label(new Rect(650, 40, 400, 300), "ゴールまであと " + loadLength.ToString("00") + "m", style);
+         goalLabel.GetComponent<Text>().text = "ゴールまであと " + loadLength.ToString("00") + "m";
 
     }
     //staticでクリアシーンと変数を共有
