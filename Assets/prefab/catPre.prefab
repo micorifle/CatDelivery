@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4299259603647040}
-  - component: {fileID: 114225326889123870}
   - component: {fileID: 61228471939996104}
+  - component: {fileID: 114462285127574766}
   m_Layer: 0
   m_Name: sensor
   m_TagString: Untagged
@@ -40,8 +40,8 @@ GameObject:
   - component: {fileID: 50684014670097138}
   - component: {fileID: 58424097841087162}
   - component: {fileID: 61587713658798614}
-  - component: {fileID: 114376981141469378}
   - component: {fileID: 95371336586438534}
+  - component: {fileID: 114562066992995202}
   m_Layer: 0
   m_Name: catPre
   m_TagString: Player
@@ -178,7 +178,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114225326889123870
+--- !u!114 &114462285127574766
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -186,10 +186,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053097458465090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d5202f115011f145a6f2b39eedf63e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 514916419afd6f349a1b3be4104df187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114376981141469378
+--- !u!114 &114562066992995202
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1487629254990422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ef892ec5e67054a897d65063dec64c, type: 3}
+  m_Script: {fileID: 11500000, guid: f2bb266305b70684181d47e6f6689bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212154658326474180
