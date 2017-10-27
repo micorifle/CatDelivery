@@ -19,8 +19,8 @@ public class KayScene : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            SceneManager.LoadScene("GameScene");
-            //SceneManager.LoadScene("PlayScene");
+            //SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("PlayScene");
         }
 	}
 }
