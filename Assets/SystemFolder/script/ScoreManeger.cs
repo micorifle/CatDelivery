@@ -13,12 +13,13 @@ public class ScoreManeger : MonoBehaviour {
     float timeScore;    //時間のスコアを入れる
     string timeText;    //時間の評価をいれる
     string boxText;     //荷物の評価を入れる
-    public GameObject scoreText;
+    public GameObject scoreText1;
     public GameObject scoreText2;
 
 	// Use this for initialization
 	void Start () {
-        scoreText = GameObject.Find("score");
+        //scoreText1 = GameObject.Find("score");
+        //scoreText1 = GameObject.Find("score");
         boxScore = HpBerDirector.BoxScore();    //HpBerDirectorの荷物カラーを取得
         timeScore = GameManeger.TimeScore();    //GameManegerの残り時間を取得
 	}
@@ -54,7 +55,7 @@ public class ScoreManeger : MonoBehaviour {
             timeText = "さすが、早いわね～";
         }
         //テキスト表示
-        scoreText.GetComponent<Text>().text = timeText;
+        scoreText1.GetComponent<Text>().text = timeText;
         scoreText2.GetComponent<Text>().text =  boxText;
         
 
