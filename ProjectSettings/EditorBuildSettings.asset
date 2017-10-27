@@ -6,6 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/MainFolder/PlayScene.unity
     guid: a9d24684ee5013e4089da2f269a944af
   - enabled: 1
@@ -23,3 +24,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SystemFolder/scene/TutorialScene.unity
     guid: ccf886a1431fe12418f540bf6e84a923
+=======
+    path: Assets/scene/GameScene.unity
+    guid: a592756eaf871ee45bb84a4611f5d611
+  - enabled: 1
+    path: Assets/scene/GameOver.unity
+    guid: 7767bd8e4aad4fe4cb5407884537dbb5
+  - enabled: 1
+    path: Assets/scene/ClearScene.unity
+    guid: cc85ee9d12e9a324184717266741f56b
+>>>>>>> e5077c44a86362197bb69d4da61b5c892b1b4724

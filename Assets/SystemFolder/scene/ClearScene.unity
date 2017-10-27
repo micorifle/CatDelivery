@@ -122,7 +122,6 @@ GameObject:
   - component: {fileID: 15609767}
   - component: {fileID: 15609770}
   - component: {fileID: 15609769}
-  - component: {fileID: 15609768}
   m_Layer: 5
   m_Name: score
   m_TagString: Untagged
@@ -148,6 +147,7 @@ RectTransform:
   m_AnchoredPosition: {x: 66.4, y: 50}
   m_SizeDelta: {x: 535.5, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:Assets/SystemFolder/scene/ClearScene.unity
 --- !u!114 &15609768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 15609766}
   scoreText2: {fileID: 1220235931}
+=======
+>>>>>>> e5077c44a86362197bb69d4da61b5c892b1b4724:Assets/scene/ClearScene.unity
 --- !u!114 &15609769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,8 +372,13 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781602376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD:Assets/SystemFolder/scene/ClearScene.unity
   m_LocalPosition: {x: 0, y: 0, z: 90}
   m_LocalScale: {x: 0.022222223, y: 0.022222223, z: 0.022222223}
+=======
+  m_LocalPosition: {x: 459, y: 202, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> e5077c44a86362197bb69d4da61b5c892b1b4724:Assets/scene/ClearScene.unity
   m_Children:
   - {fileID: 1259250504}
   - {fileID: 15609767}
@@ -839,7 +846,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2000742079}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:Assets/SystemFolder/scene/ClearScene.unity
   m_Script: {fileID: 11500000, guid: 3f1b8e365a1ac284588f0da1bb5cc3ec, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 336699d51a2a84945b319ddd0a65ebc2, type: 3}
+>>>>>>> e5077c44a86362197bb69d4da61b5c892b1b4724:Assets/scene/ClearScene.unity
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &2000742081
