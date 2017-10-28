@@ -19,6 +19,7 @@ public class HpBerDirector : MonoBehaviour
         hpGage = GameObject.Find("hpGage");
         player = GameObject.FindGameObjectWithTag("Player");
         boxGage = GameObject.Find("boxGage");
+        coler = 1.0f;
     }
 
 

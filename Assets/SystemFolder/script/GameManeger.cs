@@ -22,7 +22,7 @@ public class GameManeger : MonoBehaviour
 
     void Start()
     {
-
+        timeCount = 60;
         style = new GUIStyle();
         timeColor = new GUIStyleState();
         timeColor.textColor = Color.black;  //黒色
